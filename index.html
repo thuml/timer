@@ -1,312 +1,696 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
+  <title>Timer: Large Time Series Foundation Model</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
 
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
 </head>
+
 <body>
 
+  <!-- ======= Top Bar ======= -->
+  <!-- <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </section> -->
 
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+      <div id="logo">
+        <!-- <h1><a href="index.html">Reve<span>al</span></a></h1> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="index.html"><img src="assets/img/logo.png" alt="" width="200", height="50"></a>
+      </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li class="menu-active"><a href="#body">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Scenarios</a></li>
+          <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+          <!-- <li><a href="#team">Team</a></li> -->
+          <!-- <li class="menu-has-children"><a href="">Drop Down</a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://github.com/thuml/Large-Time-Series-Model">Github</a></li>
+          <li><a href="index_zh.html">中文</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
+    </div>
+  </header><!-- End Header -->
 
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
+  <!-- ======= hero Section ======= -->
+  <section id="hero">
 
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+    <div class="hero-content" data-aos="fade-up">
+      <h2>Analyse <span>Universal</span> Time Series <br> Through <span>Large Model</span></h2>
+      <div>
+        <a href="#about" class="btn-get-started scrollto">Get Started</a>
+        <a href="https://arxiv.org/abs/2402.02368" class="btn-projects scrollto">Our Paper</a>
+      </div>
+    </div>
+
+    <div class="hero-slider swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image: url('assets/img/hero-carousel/1.jpg');"></div>
+        <div class="swiper-slide" style="background-image: url('assets/img/hero-carousel/2.jpg');"></div>
+        <div class="swiper-slide" style="background-image: url('assets/img/hero-carousel/3.jpg');"></div>
+        <div class="swiper-slide" style="background-image: url('assets/img/hero-carousel/4.jpg');"></div>
+      </div>
+    </div>
+
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row" id="about-arch">
+          <div class="col-lg-6 about-img">
+            <img src="assets/img/about-img-arch.png" alt="">
+          </div>
+
+          <div class="col-lg-6 content">
+            <h2>Welcome to Timer - Pioneering Time Series Analysis</h2>
+            <h3>Timer is the brainchild of a dedicated team of researchers and developers from the <span>School of Software, at Tsinghua University.</span> Our work is inspired by the transformative impact of large language models on natural language processing. We've taken the same approach to time series data, creating a model <span>pre-trained on massive datasets and fine-tuning for specific tasks</span> with remarkable few-shot ability.</h3>
+          
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Luxuriant knowledge base based on large-scale pre-training.</li>
+              <li><i class="bi bi-check-circle"></i> Diverse downstream tasks to adapt to complex industrial scenarios.</li>
+              <li><i class="bi bi-check-circle"></i> Mighty analytical ability and generalization ability for real-world data.</li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="row" id="about-abilities">
+          <div class="about-img">
+            <img src="assets/img/about-abilities.png" alt="">
+          </div>
+        </div>
+        <div class="row" id="about-data">
+          <div class="col-lg-6 content">
+            <h2>Massive High-quality Dataset</h2>
+            <h3>In pursuit of preeminent analytical prowess within the industry, we have meticulously constructed a vast dataset that harmoniously integrates <span>extensive scale, superior quality, and multifaceted domains.</span>  This endeavor has endowed Timer with an expansive repository of high-caliber data, thereby conferring upon it an impressively robust generalization capability across a multitude of tasks.</h3>
+
+          </div>
+          <div class="col-lg-6 about-img">
+            <img src="assets/img/about-img-data.png" alt="">
+          </div>
+        </div>
+
+        <div class="row" id="about-demo">
+          <div class="col-lg-6 about-img">
+            <video controls autoplay loop>
+              <source src="assets/img/demo.mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <div class="col-lg-6 content">
+            <h2>One-Stop Analysis Scheme</h2>
+            <h3>In alignment with the formidable capabilities of our model, we have engineered a complementary suite of solutions. These solutions enable you to access the advanced analytical services of our large-scale model through a variety of methods, including online API access, platform-based deployment, and even bespoke private deployment options.
+              <br><span>The front-end API, which is designed for online invocation, is on the cusp of being launched!</span></h3>
+
+
+          </div>
+        </div>
+
+        <!-- <div class="row">
+          <div class="col-lg-6 about-img">
+            <img src="assets/img/about-img.jpg" alt="">
+          </div>
+
+          <div class="col-lg-6 content">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
+            <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+            </ul>
+
+          </div> -->
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>scenarios</h2>
+          <p>
+            Timer offers a suite of services designed to help businesses and researchers unlock the full potential of their time series data. Our Timer model is pre-trained on vast datasets and fine-tuned for specific tasks, providing a powerful tool for a range of applications.
+          </p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="box">
+              <div class="icon"><i class="bi bi-graph-up"></i></div>
+              <h4 class="title"><a href="">Forecasting</a></h4>
+              <p class="description">Eliminate the headaches of missing data. Timer fills in the gaps, ensuring continuity and integrity in your time series datasets.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="box">
+              <div class="icon"><i class="bi bi-bar-chart"></i></div>
+              <h4 class="title"><a href="">Data Imputation</a></h4>
+              <p class="description">Eliminate the headaches of missing data. Timer fills in the gaps, ensuring continuity and integrity in your time series datasets.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="box">
+              <div class="icon"><i class="bi bi-lightning"></i></div>
+              <h4 class="title"><a href="">Anomaly Detection</a></h4>
+              <p class="description">We provide anomaly detection capabilities based on autoregressive analysis, and Timer will provide real-time alerts for possible abnormal data.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="box">
+              <div class="icon"><i class="bi bi-upload"></i></div>
+              <h4 class="title"><a href="">Unified Generative Framework</a></h4>
+              <p class="description">Our services operate under a unified generative approach, streamlining complex tasks for diverse applications and domains.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <!-- <section id="clients">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Clients</h2>
+          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
+        </div>
+
+        <div class="clients-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section> -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Showcases</h2>
+          <!-- Timer拥有较强的泛化性，能够适应多种不同领域和场景的真实时序数据，在各种任务上拥有优异的处理效果，这里展现了Timer在不同数据上的真实表现 -->
+          <p>
+            Timer boasts an exceptional generalization capacity, adeptly accommodating a myriad of authentic time series datasets from diverse sectors and scenarios. It consistently delivers superior performance across a spectrum of tasks, showcasing its robust adaptability and efficacy. The following demonstration illustrates the tangible prowess of Timer when applied to a variety of data sets.
+            <br>(We used different sample sizes for fine-tuning on some datasets and provided the following visualization.)
+          </p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-forecast">Forecast</li>
+              <li data-filter=".filter-imputation">Imputation</li>
+              <li data-filter=".filter-detection">Detection</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-forecast">
+            <img src="assets/img/portfolio/forecast_ECL_0.2_0.pdf.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Forecast on ECL Dataset</h4>
+              <p>20% Samples Fine-tuned</p>
+              <a href="assets/img/portfolio/forecast_ECL_0.2_0.pdf.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-forecast">
+            <img src="assets/img/portfolio/forecast_Traffic_0.2_10_0.pdf.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Forecast on Traffic Dataset</h4>
+              <p>20% Samples Fine-tuned</p>
+              <a href="assets/img/portfolio/forecast_Traffic_0.2_10_0.pdf.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-forecast">
+            <img src="assets/img/portfolio/forecast_PEMS03_0.2_30_0.pdf.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Forecast on PEMS03 Dataset</h4>
+              <p>20% Samples Fine-tuned</p>
+              <a href="assets/img/portfolio/forecast_PEMS03_0.2_30_0.pdf.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-forecast">
+            <img src="assets/img/portfolio/forecast_ECL_0.05_10_0.pdf.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Forecast on ECL Dataset</h4>
+              <p>5% Samples Fine-tuned</p>
+              <a href="assets/img/portfolio/forecast_ECL_0.05_10_0.pdf.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-forecast">
+            <img src="assets/img/portfolio/forecast_Traffic_0.05_10_0.pdf.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Forecast on Traffic Dataset</h4>
+              <p>5% Samples Fine-tuned</p>
+              <a href="assets/img/portfolio/forecast_Traffic_0.05_10_0.pdf.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-forecast">
+            <img src="assets/img/portfolio/forecast_PEMS03_0.05_30_0.pdf.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Forecast on PEMS03 Dataset</h4>
+              <p>5% Samples Fine-tuned</p>
+              <a href="assets/img/portfolio/forecast_PEMS03_0.05_30_0.pdf.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-imputation">
+            <img src="assets/img/portfolio/imputation_ETTh2_0.2_400.pdf.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Imputation on ETTh2 Dataset</h4>
+              <p>20% Samples Fine-tuned</p>
+              <a href="assets/img/portfolio/imputation_ETTh2_0.2_400.pdf.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-imputation">
+            <img src="assets/img/portfolio/imputation_ECL_0.2_140.pdf.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Imputation on ECL Dataset</h4>
+              <p>20% Samples Fine-tuned</p>
+              <a href="assets/img/portfolio/imputation_ECL_0.2_140.pdf.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-imputation">
+            <img src="assets/img/portfolio/imputation_Traffic_0.2_180.pdf.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Imputation on Traffic Dataset</h4>
+              <p>20% Samples Fine-tuned</p>
+              <a href="assets/img/portfolio/imputation_Traffic_0.2_180.pdf.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-imputation">
+            <img src="assets/img/portfolio/imputation_ETTh2_0.05_400.pdf.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Imputation on ETTh2 Dataset</h4>
+              <p>5% Samples Fine-tuned</p>
+              <a href="assets/img/portfolio/imputation_ETTh2_0.05_400.pdf.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-imputation">
+            <img src="assets/img/portfolio/imputation_ECL_0.05_140.pdf.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Imputation on ECL Dataset</h4>
+              <p>5% Samples Fine-tuned</p>
+              <a href="assets/img/portfolio/imputation_ECL_0.05_140.pdf.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-imputation">
+            <img src="assets/img/portfolio/imputation_Traffic_0.05_180.pdf.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Imputation on Traffic Dataset</h4>
+              <p>5% Samples Fine-tuned</p>
+              <a href="assets/img/portfolio/imputation_Traffic_0.05_180.pdf.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-detection">
+            <img src="assets/img/portfolio/detection_016_UCR_Anomaly_DISTORTEDECG4_5000_16900_17100.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Detection on ECG4 Dataset</h4>
+              <a href="assets/img/portfolio/detection_016_UCR_Anomaly_DISTORTEDECG4_5000_16900_17100.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-detection">
+            <img src="assets/img/portfolio/detection_069_UCR_Anomaly_DISTORTEDinsectEPG5_3200_8500_8501.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Detection on insectEPG5 Dataset</h4>
+              <a href="assets/img/portfolio/detection_069_UCR_Anomaly_DISTORTEDinsectEPG5_3200_8500_8501.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-detection">
+            <img src="assets/img/portfolio/detection_206_UCR_Anomaly_CHARISten_25130_29080_29140.pdf.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Detection on CHARISten Dataset</h4>
+              <a href="assets/img/portfolio/detection_206_UCR_Anomaly_CHARISten_25130_29080_29140.pdf.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+              
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <!-- <section id="testimonials">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Testimonials</h2>
+          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
+                </p>
+                <img src="assets/img/testimonial-1.jpg" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
+                </p>
+                <img src="assets/img/testimonial-2.jpg" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
+                </p>
+                <img src="assets/img/testimonial-3.jpg" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
+                </p>
+                <img src="assets/img/testimonial-4.jpg" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
+                </p>
+                <img src="assets/img/testimonial-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section> -->
+
+    <!-- ======= Call To Action Section ======= -->
+    <!-- <section id="call-to-action">
+      <div class="container" data-aos="zoom-out">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3 class="cta-title">Call To Action</h3>
+            <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Call To Action</a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- ======= Team Section ======= -->
+    <!-- <section id="team">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Our Team</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="assets/img/team-1.jpg" alt=""></div>
+              <div class="details">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="assets/img/team-2.jpg" alt=""></div>
+              <div class="details">
+                <h4>Sarah Jhinson</h4>
+                <span>Product Manager</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="assets/img/team-3.jpg" alt=""></div>
+              <div class="details">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="assets/img/team-4.jpg" alt=""></div>
+              <div class="details">
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
       </div>
-    </div>
-  </div>
-</section>
+    </section> -->
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+    <!-- ======= Contact Section ======= -->
+    <section id="contact">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Contact Us</h2>
+          <p>Our model capabilities are rapidly iterating as research progresses. If you are interested, please contact us proactively.</p>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
 
+        <div class="row contact-info">
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="bi bi-geo-alt"></i>
+              <h3>Address</h3>
+              <address>Zone 11, East Campus, Tsinghua University, Haidian District, Beijing, China</address>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
 
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="bi bi-link"></i>
+              <h3>Homepage</h3>
+              <p><a href="http://ise.thss.tsinghua.edu.cn/~mlong/">http://ise.thss.tsinghua.edu.cn/~mlong/</a></p>
+            </div>
+          </div>
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="bi bi-envelope"></i>
+              <h3>Email</h3>
+              <p><a href="mingsheng@tsinghua.edu.cn">mingsheng@tsinghua.edu.cn</a></p>
+            </div>
+          </div>
 
         </div>
       </div>
-    </div>
-  </div>
-</footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+      <!-- <div class="container mb-4">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
 
-    <!-- End of Statcounter Code -->
+      <div class="container">
+        <div class="form">
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="form-group col-md-6 mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+            </div>
 
-  </body>
-  </html>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div> -->
+    </section>
+
+  </main><!-- End #main -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

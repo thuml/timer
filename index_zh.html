@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Timer: 时间序列基础模型</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="zh">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+
+      <div id="logo">
+        <!-- <h1><a href="index.html">Reve<span>al</span></a></h1> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="index.html"><img src="assets/img/logo.png" alt="" width="200", height="50"></a>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li class="menu-active"><a href="#body">主页</a></li>
+          <li><a href="#about">关于</a></li>
+          <li><a href="#services">场景</a></li>
+          <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+          <!-- <li><a href="#team">Team</a></li> -->
+          <!-- <li class="menu-has-children"><a href="">Drop Down</a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#contact">联系</a></li>
+          <li><a href="https://github.com/thuml/Large-Time-Series-Model">源码</a></li>
+          <li><a href="index.html">Eng</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= hero Section ======= -->
+  <section id="hero">
+
+    <div class="hero-content" data-aos="fade-up">
+      <h2>基于<span>大模型</span>的通用<span>时间序列分析</span></h2>
+      <div>
+        <a href="#about" class="btn-get-started scrollto">了解详情</a>
+        <a href="https://arxiv.org/abs/2402.02368" class="btn-projects scrollto">论文原文</a>
+      </div>
+    </div>
+
+    <div class="hero-slider swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image: url('assets/img/hero-carousel/1.jpg');"></div>
+        <div class="swiper-slide" style="background-image: url('assets/img/hero-carousel/2.jpg');"></div>
+        <div class="swiper-slide" style="background-image: url('assets/img/hero-carousel/3.jpg');"></div>
+        <div class="swiper-slide" style="background-image: url('assets/img/hero-carousel/4.jpg');"></div>
+      </div>
+    </div>
+
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row" id="about-arch">
+          <div class="col-lg-6 about-img">
+            <img src="assets/img/about-img-arch.png" alt="">
+          </div>
+
+          <div class="col-lg-6 content">
+            <h2>欢迎使用Timer-深度时序分析基础模型</h2>
+            <h3>Timer是<span>清华大学软件学院</span>在时序分析领域深耕的结晶。我们的工作受到大型语言模型对自然语言处理变革性影响的启发，在时间序列领域使用大模型技术创建了该领域首个真正意义上的大模型，并且<span>在大量数据集上进行预训练，并依靠显著的少样本能力对特定任务进行微调</span>，从而赋予深度模型强大的通用能力。我们的模型拥有以下特点：</h3>
+          
+            <ul>
+              <li><i class="bi bi-check-circle"></i> 基于大规模预训练的丰富知识库</li>
+              <li><i class="bi bi-check-circle"></i> 多样化的下游任务以适应复杂的行业场景</li>
+              <li><i class="bi bi-check-circle"></i> 强大的分析能力和对真实世界数据的理解能力</li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="row" id="about-abilities">
+          <div class="about-img">
+            <img src="assets/img/about-abilities.png" alt="">
+          </div>
+        </div>
+        <div class="row" id="about-data">
+          <div class="col-lg-6 content">
+            <h2>大规模高质量时序数据集</h2>
+            <h3>为了追求业内卓越的分析能力，我们精心构建了大规模的预训练数据集，该数据集兼有<span>庞大的体量、卓越的质量和丰富的领域</span>等重要特质，这为Timer提供了一个庞大的高水准数据知识库，从而使其在众多任务中具有令人印象深刻的强大泛化能力。</h3>
+
+          </div>
+          <div class="col-lg-6 about-img">
+            <img src="assets/img/about-img-data.png" alt="">
+          </div>
+        </div>
+
+        <div class="row" id="about-demo">
+          <div class="col-lg-6 about-img">
+            <video controls autoplay loop>
+              <source src="assets/img/demo.mp4">
+              您的浏览器不支持 video 标签。
+            </video>
+          </div>
+
+          <div class="col-lg-6 content">
+            <h2>一站式通用分析解决方案</h2>
+            <h3>基于我们模型强大的功能，我们设计了一套完备的解决方案。这些解决方案使您能够通过多种方法访问我们大型模型的高级分析服务，包括在线API访问、基于平台的调用，乃至定制的私人部署等多种选项。
+              <br><span>为在线调用而设计的前端API即将推出，敬请期待。</span></h3>
+
+
+          </div>
+        </div>
+
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>场景服务</h2>
+          <p>Timer提供全方面的时序分析能力，旨在帮助您企业和研究人员释放其时间序列数据的全部潜力。我们的Timer模型在大量数据集上进行了预训练，并针对特定任务进行了微调，为一系列可能的实际应用场景提供通用解决方案。</p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="box">
+              <div class="icon"><i class="bi bi-graph-up"></i></div>
+              <h4 class="title"><a href="">时序预测</a></h4>
+              <p class="description">准确的预测建模是Timer功能的核心。我们的服务能够提供对工业生产、自然环境等时序数据的精确预测。</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="box">
+              <div class="icon"><i class="bi bi-bar-chart"></i></div>
+              <h4 class="title"><a href="">数据填补</a></h4>
+              <p class="description">消除数据丢失带来的麻烦。Timer拥有对缺失序列段的上下文填补能力，为时间序列数据集带来连续性和完整性。</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="box">
+              <div class="icon"><i class="bi bi-lightning"></i></div>
+              <h4 class="title"><a href="">异常检测</a></h4>
+              <p class="description">我们提供基于自回归分析的异常检测能力，Timer将通过对于序列段的滚动分析对可能异常序列数据进行实时预警。</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="box">
+              <div class="icon"><i class="bi bi-upload"></i></div>
+              <h4 class="title"><a href="">通用生成式分析框架</a></h4>
+              <p class="description">我们的服务在统一的生成方法下运行，为不同的应用程序和领域简化复杂的任务，提供通用时序分析的可能。</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Showcases</h2>
+          <!-- Timer拥有较强的泛化性，能够适应多种不同领域和场景的真实时序数据，在各种任务上拥有优异的处理效果，这里展现了Timer在不同数据上的真实表现 -->
+          <p>Timer拥有很强的泛化性，能够适应多种不同领域和场景的真实时序数据，在各种任务上拥有优异的处理效果，这里展现了Timer在不同数据上的真实表现。
+            <br>（我们在部分数据集上使用不同的样本数量进行微调，给出了如下可视化结果。）
+          </p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">全部</li>
+              <li data-filter=".filter-forecast">时序预测</li>
+              <li data-filter=".filter-imputation">数据填补</li>
+              <li data-filter=".filter-detection">异常检测</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-forecast">
+            <img src="assets/img/portfolio/forecast_ECL_0.2_0.pdf.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>时序预测 ECL数据集</h4>
+              <p>20% 样本微调</p>
+              <a href="assets/img/portfolio/forecast_ECL_0.2_0.pdf.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-forecast">
+            <img src="assets/img/portfolio/forecast_Traffic_0.2_10_0.pdf.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>时序预测 Traffic数据集</h4>
+              <p>20% 样本微调</p>
+              <a href="assets/img/portfolio/forecast_Traffic_0.2_10_0.pdf.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-forecast">
+            <img src="assets/img/portfolio/forecast_PEMS03_0.2_30_0.pdf.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>时序预测 PEMS03数据集</h4>
+              <p>20% 样本微调</p>
+              <a href="assets/img/portfolio/forecast_PEMS03_0.2_30_0.pdf.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-forecast">
+            <img src="assets/img/portfolio/forecast_ECL_0.05_10_0.pdf.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>时序预测 ECL数据集</h4>
+              <p>5% 样本微调</p>
+              <a href="assets/img/portfolio/forecast_ECL_0.05_10_0.pdf.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-forecast">
+            <img src="assets/img/portfolio/forecast_Traffic_0.05_10_0.pdf.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>时序预测 Traffic数据集</h4>
+              <p>5% 样本微调</p>
+              <a href="assets/img/portfolio/forecast_Traffic_0.05_10_0.pdf.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-forecast">
+            <img src="assets/img/portfolio/forecast_PEMS03_0.05_30_0.pdf.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>时序预测 PEMS03数据集</h4>
+              <p>5% 样本微调</p>
+              <a href="assets/img/portfolio/forecast_PEMS03_0.05_30_0.pdf.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-imputation">
+            <img src="assets/img/portfolio/imputation_ETTh2_0.2_400.pdf.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>数据填补 ETTh2数据集</h4>
+              <p>20% 样本微调</p>
+              <a href="assets/img/portfolio/imputation_ETTh2_0.2_400.pdf.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-imputation">
+            <img src="assets/img/portfolio/imputation_ECL_0.2_140.pdf.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>数据填补 ECL数据集</h4>
+              <p>20% 样本微调</p>
+              <a href="assets/img/portfolio/imputation_ECL_0.2_140.pdf.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-imputation">
+            <img src="assets/img/portfolio/imputation_Traffic_0.2_180.pdf.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>数据填补 Traffic数据集</h4>
+              <p>20% 样本微调</p>
+              <a href="assets/img/portfolio/imputation_Traffic_0.2_180.pdf.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-imputation">
+            <img src="assets/img/portfolio/imputation_ETTh2_0.05_400.pdf.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>数据填补 ETTh2数据集</h4>
+              <p>5% 样本微调</p>
+              <a href="assets/img/portfolio/imputation_ETTh2_0.05_400.pdf.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-imputation">
+            <img src="assets/img/portfolio/imputation_ECL_0.05_140.pdf.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>数据填补 ECL数据集</h4>
+              <p>5% 样本微调</p>
+              <a href="assets/img/portfolio/imputation_ECL_0.05_140.pdf.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-imputation">
+            <img src="assets/img/portfolio/imputation_Traffic_0.05_180.pdf.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>数据填补 Traffic数据集</h4>
+              <p>5% 样本微调</p>
+              <a href="assets/img/portfolio/imputation_Traffic_0.05_180.pdf.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-detection">
+            <img src="assets/img/portfolio/detection_016_UCR_Anomaly_DISTORTEDECG4_5000_16900_17100.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>异常检测 ECG4数据集</h4>
+              <a href="assets/img/portfolio/detection_016_UCR_Anomaly_DISTORTEDECG4_5000_16900_17100.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-detection">
+            <img src="assets/img/portfolio/detection_069_UCR_Anomaly_DISTORTEDinsectEPG5_3200_8500_8501.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>异常检测 insectEPG5数据集</h4>
+              <a href="assets/img/portfolio/detection_069_UCR_Anomaly_DISTORTEDinsectEPG5_3200_8500_8501.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-detection">
+            <img src="assets/img/portfolio/detection_206_UCR_Anomaly_CHARISten_25130_29080_29140.pdf.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>异常检测 CHARISten数据集</h4>
+              <a href="assets/img/portfolio/detection_206_UCR_Anomaly_CHARISten_25130_29080_29140.pdf.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+              
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>联系我们</h2>
+          <p>随着研究的进展，我们的模型功能正在快速迭代。如果您对我们的工作感兴趣，请主动与我们联系。</p>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="bi bi-geo-alt"></i>
+              <h3>地址</h3>
+              <address>北京市海淀区清华大学软件学院<br>东配楼11区11-419室</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="bi bi-link"></i>
+              <h3>主页</h3>
+              <p><a href="http://ise.thss.tsinghua.edu.cn/~mlong/">http://ise.thss.tsinghua.edu.cn/~mlong/</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="bi bi-envelope"></i>
+              <h3>邮箱</h3>
+              <p><a href="mingsheng@tsinghua.edu.cn">mingsheng@tsinghua.edu.cn</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </main><!-- End #main -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
