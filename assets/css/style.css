@@ -597,9 +597,6 @@ section {
   margin-bottom: 80px;
 }
 
-/* #about-abilities .row {
-  margin-bottom: 100px;
-} */
 
 #about .about-img {
   overflow: hidden;
@@ -610,7 +607,7 @@ section {
   max-width: 100%;
 }
 
-#about-abilities .about-img img {
+#about .about-img-row .about-img img {
 /* 居中对齐
 --------------------------------*/
   margin-left: 0;
@@ -620,6 +617,8 @@ section {
   width: 1600px;
   height: auto;
 }
+
+
 
 #about-arch .about-img img {
   margin-top: 50px;
@@ -641,11 +640,29 @@ section {
   }
 }
 
-#about .content h2 {
+/* #about .content h2 {
   color: #002fa7;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 30px;
   font-family: "Raleway", sans-serif;
+}
+
+#about .about-img-row h2 {
+  color: #002fa7;
+  font-weight: 700;
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+} */
+
+#about h2 {
+  color: #002fa7;
+  font-weight: 700;
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+}
+
+#about-arch h2 {
+  font-size: 40px;
 }
 
 #about .content h3 {
